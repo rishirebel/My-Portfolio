@@ -6,7 +6,7 @@
 -   bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 -   styled with [Material-UI](https://material-ui.com)
 
-Special thanks to [Mark Christian Tan](https://github.com/taniyow)for the inspiration.
+Special thanks to [Mark Christian Tan](https://github.com/taniyow) for the inspiration.
 
 ## Customization
 
