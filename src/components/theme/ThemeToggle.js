@@ -33,7 +33,7 @@ export const ThemeToggle = () => {
           aria-label={"Toggle theme"}
           className={classes.iconButton}
         >
-          {theme === "light" ? (
+          {theme === "dark" ? (
               <Brightness4 className={classes.icon} />
           ) : (
               <Brightness7 className={classes.icon} />
