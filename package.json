@@ -1,7 +1,7 @@
 {
   "name": "my-react-portfolio",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "http://localhost:3000/",
   "description": "A clean and customizable ReactJS portfolio template for fellow developers.",
   "repository": "https://github.com/rishirebel/new_portfolio",
   "author": "Rishikesh Chandra <rishirebel@gmail.com>",
@@ -31,14 +31,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && react-snapshot",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "reactSnapshot": {
-    "exclude": [
-      "/resume"
-    ],
+    "exclude": [],
     "snapshotDelay": 1000
   },
   "eslintConfig": {
@@ -56,7 +54,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "emailjs": "^4.0.0"
-  }
+  "devDependencies": {}
 }
