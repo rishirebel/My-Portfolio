@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_react_portfolio=self.webpackChunkmy_react_portfolio||[]).push([[3],{9003:(s,e,o)=>{o.r(e),o.d(e,{PageNotFound:()=>a});o(5043);var r=o(7105),t=o(9982),c=o(579);const a=()=>(0,c.jsxs)("div",{children:[(0,c.jsx)(r.A,{}),(0,c.jsx)(t.w,{})]})}}]);
+//# sourceMappingURL=3.cf7eac23.chunk.js.map

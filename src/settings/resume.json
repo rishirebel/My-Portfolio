@@ -1,0 +1,202 @@
+{
+    "basics": {
+        "name": "Rishikesh Chandra",
+        "label": "CTO | Software Architect",
+        "email": "rishirebel@gmail.com",
+        "phone": "+91 7973229140",
+        "picture": "mt.png",
+        "x_title": "Professional Prelude: A Brief Introduction",
+        "job1": "CTO",
+        "job2": "Solutions Architect",
+        "description": "Hello! I'm Rishikesh, a seasoned Solutions Architect. With over a decade of experience, I thrive on building high-performance teams and delivering cutting-edge technology solutions.",
+        "summary": "Nex-gen technology leader with 10+ years of experience leading global teams, driving innovation in software and data architecture. Renowned for spearheading cloud implementations and delivering KPI-driven results.",
+        "keywords": "technology, strategy, cloud, architecture, software, development, AI, blockchain, cybersecurity, devops, innovation, leadership, Rishikesh, Chandra, webdev, CTO, solutions architect",
+        "url": "https://cyberrishi.com/",
+        "location": {
+            "address": "Chandigarh",
+            "postalCode": "160047",
+            "city": "Chandigarh",
+            "country": "India",
+            "countryCode": "IN",
+            "region": "Chandigarh"
+        },
+        "profiles": [
+            {
+                "network": "Google",
+                "username": "rishirebel@gmail.com",
+                "url": "mailto:rishirebel@gmail.com",
+                "x_icon": "fab fa-google"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Rishikesh Chandra",
+                "url": "https://www.linkedin.com/in/rchandra1/",
+                "x_icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "GitHub",
+                "username": "rishirebel",
+                "url": "https://github.com/rishirebel",
+                "x_icon": "fab fa-github"
+            },
+            {
+                "network": "GitLab",
+                "username": "rishirebel",
+                "url": "https://gitlab.com/rishirebel",
+                "x_icon": "fab fa-gitlab"
+            },
+            {
+                "network": "Stack Overflow",
+                "username": "Rishikesh Chandra",
+                "url": "https://stackoverflow.com/users/5644413/rishikesh-chandra",
+                "x_icon": "fab fa-stack-overflow"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Intelligaia",
+            "position": "Chief Technology Officer",
+            "website": "https://www.intelligaia.com",
+            "startDate": "2019-10-01",
+            "summary": "Led the technology strategy and operations, managing the platform selection, architecture, and team expansion. Spearheaded DevOps and cybersecurity initiatives while fostering long-term talent development.",
+            "highlights": [
+                "Drove digital transformation initiatives using AI and blockchain.",
+                "Led platform development for Cisco Outshift’s Panoptica and Motific.",
+                "Led product development for HPE Ezmeral services, enhancing UX/UI design."
+            ]
+        },
+        {
+            "company": "Volumetree",
+            "position": "Director & Chief Technology Officer",
+            "startDate": "2017-07-01",
+            "endDate": "2019-09-01",
+            "summary": "Executed the product vision and managed a high-performance engineering team, delivering innovative technical solutions.",
+            "highlights": [
+                "Developed a strategic technical roadmap, aligning with business goals.",
+                "Led recruitment and career development for key engineering roles."
+            ]
+        },
+        {
+            "company": "Click Labs | Jugnoo",
+            "position": "Senior Software Engineer",
+            "startDate": "2016-08-01",
+            "endDate": "2017-07-01",
+            "summary": "Designed and implemented scalable application architectures, leading internal product development and client solutions.",
+            "highlights": [
+                "Developed backend architecture for multiple service-based projects."
+            ]
+        },
+        {
+            "company": "Novanet",
+            "position": "Software Engineer/Developer",
+            "startDate": "2015-06-01",
+            "endDate": "2016-07-01",
+            "summary": "Worked on software development projects, gaining foundational experience."
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "website": "http://organization.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Volunteer activities",
+            "highlights": ["Awarded 'Volunteer of the Month'"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Pune",
+            "area": "Computer Engineering",
+            "studyType": "Bachelor of Engineering (BEng)",
+            "startDate": "2010-01-01",
+            "endDate": "2014-01-01",
+            "gpa": "4.0"
+        }
+    ],
+    "awards": [
+        {
+            "title": "Mission Impossible Award",
+            "date": "2018-01-01",
+            "awarder": "Jugnoo/Jungleworks (formerly ClickLabs)",
+            "summary": "For exceptional leadership in managing complex technical challenges."
+        }
+    ],
+    "publications": [
+        {
+            "name": "Automation Testing Using Data-Driven Approach",
+            "publisher": "Self-published",
+            "releaseDate": "2020-01-01",
+            "website": "http://publication.com",
+            "summary": "Explores innovative strategies for enhancing automation testing frameworks."
+        },
+        {
+            "name": "Data-Driven Automation Testing Framework",
+            "publisher": "Self-published",
+            "releaseDate": "2021-01-01",
+            "website": "http://publication.com",
+            "summary": "Discusses techniques for developing robust automation frameworks."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Technology Strategy",
+            "level": "Expert",
+            "keywords": ["Digital Transformation", "Innovation Management", "Market Analysis"]
+        },
+        {
+            "name": "Software Development",
+            "level": "Expert",
+            "keywords": ["AI", "Blockchain", "Cloud Architecture", "DevOps"]
+        },
+        {
+            "name": "Team Leadership",
+            "level": "Expert",
+            "keywords": ["Cross-functional Team Leadership", "Recruitment", "Stakeholder Engagement"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Hindi",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Fluent speaker"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Android App Development",
+            "date": "2023",
+            "awarder": "Self-paced"
+        },
+        {
+            "title": "Scipy International Conference on Python for Scientific Computing",
+            "date": "2023",
+            "awarder": "Scipy"
+        },
+        {
+            "title": "SQL (Advanced)",
+            "date": "2023",
+            "awarder": "Hackerrank"
+        },
+        {
+            "title": "Project Management Essentials Certified (PMEC)",
+            "date": "2021",
+            "awarder": "Management & Strategy Institute"
+        },
+        {
+            "title": "Enterprise Architecture Foundations",
+            "date": "2021",
+            "awarder": "LinkedIn"
+        },
+        {
+            "title": "Designing for Neural Networks and AI Interfaces",
+            "date": "2020",
+            "awarder": "LinkedIn"
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+.about {
+  width: 90%; /* Use more available space on smaller screens */
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 4vw; /* Responsive font size */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+._img {
+  width: 100%; /* Fully responsive width */
+  max-width: 35em; /* Constrain maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.51);
+}
+
+._content_wrapper {
+  flex: 1; /* Allow content wrapper to grow */
+  padding: 1rem; /* Added padding for spacing */
+  text-align: left;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  background-color: #464646;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 2.5vw; /* Responsive font size for button */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.contact-btn:hover {
+  background-color: #bf1000;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.contact-btn i {
+  margin-right: 8px;
+}
+
+.contact-btn:hover i {
+  transform: none; /* Keep icon stable on hover */
+}
+
+.contact-btn:active {
+  transform: translateY(0); /* Bring button back on click */
+}
+
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column; /* Stack items vertically on medium screens */
+    padding: 2rem; /* Adjust padding */
+  }
+  
+  ._img {
+    max-width: 90%; /* Make image full width on medium screens */
+  }
+
+  ._content_wrapper {
+    width: 100%; /* Use full width for content wrapper */
+    text-align: center; /* Center text for aesthetics */
+  }
+
+  .heading {
+    font-size: 5vw; /* Increase font size for medium screens */
+  }
+
+  .contact-btn {
+    font-size: 3vw; /* Increase button font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  ._img {
+    margin-bottom: 1rem; /* Space between image and content */
+  }
+
+  ._content_wrapper {
+    width: 100%; /* Full width for small screens */
+  }
+
+  .heading {
+    font-size: 6vw; /* Increase font size for smaller screens */
+  }
+
+  .contact-btn {
+    font-size: 4vw; /* Adjust button font size */
+  }
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #bf1000; /* Divider color */
+  margin: 2rem 0; /* Spacing around the divider */
+  width: 75%; /* Width of the divider */
+  margin-left: auto;
+  margin-right: auto; /* Center the divider */
+}

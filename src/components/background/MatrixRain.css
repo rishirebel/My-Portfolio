@@ -1,0 +1,51 @@
+.matrix-container {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh; /* Change to min-height to allow the content to expand */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+    overflow: hidden;
+  }
+  
+  .matrix-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%; /* Set to 100% height */
+    background-color: black;
+    z-index: 1; /* Ensure it's behind content */
+  }
+  
+  .page-not-found {
+    position: relative; /* Ensure it's within the flexbox layout */
+    margin: auto; /* Center within the flex container */
+    color: #bf1000;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 10; /* Ensure it stays on top of background */
+  }
+  
+  .page-not-found h1 {
+    margin: 0;
+  }
+
+  /* Footer-specific styles */
+  footer {
+    background-color: #1c1c1c; /* Adjust background as needed */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    position: relative;
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.875em;
+  }

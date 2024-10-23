@@ -1,0 +1,174 @@
+/* General Project Layout */
+.project {
+  width: 80%;
+  margin: 4rem auto 2rem auto; /* Centralized margin */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.2s; /* Delay to create a smoother transition */
+  color: var(--text-primary);
+  transition: all 0.3s ease; /* Smooth transitions for margin adjustments */
+}
+
+.project:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Reverse layout for alternating projects */
+.project-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image Wrapper Styling */
+.__img_wrapper {
+  position: relative; /* To position the border animation */
+  flex: 1; /* Responsive behavior */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.__img_wrapper a {
+  display: block;
+  width: 100%;
+}
+
+.__img_wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 30px var(--box-shadow);
+}
+
+/* Zoom effect on image hover */
+.__img_wrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* Glowing Border Effect */
+.__img_wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  z-index: 1; /* Place above the image */
+  pointer-events: none; /* Allow interaction with image */
+  box-shadow: 0 0 0px 0px transparent; /* Initial state */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Glowing border on hover */
+.__img_wrapper:hover::before {
+  box-shadow: 
+    0 0 5px 2px var(--primary),   /* Glow effect */
+    0 0 10px 5px var(--primary),    /* Stronger glow */
+    0 0 20px 10px rgba(255, 255, 255, 0.5); /* Outer glow */
+}
+
+/* Content Wrapper Styling */
+.__content_wrapper {
+  flex: 1;
+  padding: 15px;
+  background-color: var(--background-paper);
+  box-shadow: 0 4px 30px var(--box-shadow);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  color: var(--text-secondary);
+}
+
+.__content_wrapper:hover {
+  transform: translateY(-10px);
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  color: var(--text-primary);
+}
+
+.__content_wrapper:hover .title {
+  color: var(--primary);
+}
+
+.description {
+  font-size: 1rem;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInText 0.8s ease 0.3s forwards;
+  color: var(--text-secondary);
+}
+
+/* Focus states for better accessibility */
+.__img_wrapper a:focus,
+.__content_wrapper:focus-within {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .project, .project-reverse {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .__content_wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project, .project-reverse {
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 15px;
+  }
+  .__img_wrapper {
+    width: 100%;
+  }
+  .__content_wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
