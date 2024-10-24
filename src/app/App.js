@@ -5,19 +5,20 @@ import { ThemeProvider } from "../components/theme/ThemeProvider";
 import { CssBaseline } from "@material-ui/core";
 import { Home } from "../pages/Home";
 
-// Lazy-loaded components
 const Resume = lazy(() =>
-  import("../pages/ResumePage").then(module => ({ default: module.ResumePage }))
+  import("../pages/ResumePage").then((module) => ({ default: module.ResumePage }))
 );
 const PageNotFound = lazy(() =>
-  import("../pages/PageNotFound").then(module => ({ default: module.PageNotFound }))
+  import("../pages/PageNotFound").then((module) => ({ default: module.PageNotFound }))
 );
 const Works = lazy(() =>
-  import("../pages/ProjectsPage").then(module => ({ default: module.ProjectsPage }))
+  import("../pages/ProjectsPage").then((module) => ({ default: module.ProjectsPage }))
 );
 
 // Conditionally set the Router based on environment
-const Router = process.env.REACT_APP_SNAPSHOT === 'true' ? StaticRouter : BrowserRouter;
+const Router = process.env.REACT_APP_SNAPSHOT === 'true'
+  ? ({ children }) => <StaticRouter location={window.location.pathname}>{children}</StaticRouter>
+  : BrowserRouter;
 
 export const App = () => {
   return (
@@ -25,7 +26,6 @@ export const App = () => {
       <CssBaseline />
       <Router basename="/">
         <HelmetMeta />
-        {/* Wrap lazy-loaded routes with Suspense */}
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
             <Route path="/" exact component={Home} />
