@@ -17,7 +17,7 @@ const Works = lazy(() =>
 
 // Conditionally set the Router based on environment
 const Router = process.env.REACT_APP_SNAPSHOT === 'true'
-  ? ({ children }) => <StaticRouter location={window.location.pathname}>{children}</StaticRouter>
+  ? ({ children }) => <StaticRouter basename="/" location={window.location.pathname}>{children}</StaticRouter>
   : BrowserRouter;
 
 export const App = () => {
