@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     lineHeight: '2',
     padding: '0 6rem',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('md')]: {
       fontSize: '1rem',
       padding: '0 1rem',
       lineHeight: '1.5',
