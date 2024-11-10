@@ -8,6 +8,7 @@ import { ThemeToggle } from '../components/theme/ThemeToggle';
 import { Resume } from '../components/resume/Resume';
 import { SocialIcons } from '../components/content/SocialIcons';
 import { SpeedDials } from '../components/speedDial/SpeedDial';
+import { NavDial } from '../components/speedDial/NavDial';
 import { SideNavbar } from '../components/nav/SideNavbar';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
@@ -37,9 +38,14 @@ export const Home = () => {
         <Hidden mdUp>
           <SpeedDials />
         </Hidden>
-        <Resume />
+        <Hidden mdUp>
+          <NavDial />
+        </Hidden>
+        {/* <Resume /> */}
       </div>
-      <SideNavbar />
+      <Hidden smDown>
+        <SideNavbar />
+      </Hidden>
       <About />
       <Contact />
       <Footer/>

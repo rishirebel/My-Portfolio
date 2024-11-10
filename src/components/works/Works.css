@@ -1,7 +1,7 @@
-/* General Project Layout */
 .project {
   width: 80%;
   margin: 4rem auto 2rem auto; /* Centralized margin */
+  padding-top: 2rem; /* Add padding from the top */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -21,6 +21,33 @@
 /* Reverse layout for alternating projects */
 .project-reverse {
   flex-direction: row-reverse;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .project, .project-reverse {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 4.5rem; /* Adjust padding for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .project, .project-reverse {
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 15px;
+    padding-top: 5rem; /* Adjust padding for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project, .project-reverse {
+    padding-top: 5rem; /* Adjust padding for extra small screens */
+    margin-left: 3rem;
+    margin-right: 2rem;
+  }
 }
 
 /* Image Wrapper Styling */
@@ -113,41 +140,6 @@
 .__content_wrapper:focus-within {
   outline: 2px solid var(--primary);
   outline-offset: 4px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .project, .project-reverse {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-  .__content_wrapper {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .project, .project-reverse {
-    flex-direction: column;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    gap: 15px;
-  }
-  .__img_wrapper {
-    width: 100%;
-  }
-  .__content_wrapper {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.5rem;
-  }
-  .description {
-    font-size: 0.9rem;
-  }
 }
 
 /* Animations */

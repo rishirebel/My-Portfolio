@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     textAlign: 'center',
     padding: '0 8rem',
+    [theme.breakpoints.down('xs')]: { // For screens less than 600px
+      padding: '0 2rem',
+    },
   },
   imageWrapper: {
     width: '250px',
@@ -30,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     marginBottom: theme.spacing(2),
+    [theme.breakpoints.down('xs')]: {
+      width: '150px',
+      height: '150px',
+    },
   },
   contactBtn: {
     marginTop: theme.spacing(2),
@@ -38,13 +45,22 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: '#bf1000',
     },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '0.875rem',
+      padding: theme.spacing(1),
+    },
   },
   aboutText: {
     margin: '1.5rem 0',
-    fontSize: '1.25rem',  // Increased font size
-    fontWeight: 'bold',   // Bolder text
-    lineHeight: '2',      // Increased line height for better readability
+    fontSize: '1.25rem',
+    fontWeight: 'bold',
+    lineHeight: '2',
     padding: '0 6rem',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '1rem',
+      padding: '0 1rem',
+      lineHeight: '1.5',
+    },
   },
 }));
 
@@ -68,7 +84,7 @@ export const About = () => {
 
         {/* Greetings */}
         <Typography component="h2" variant="h4" style={{ fontWeight: '700', fontSize: '2rem' }}>
-          <TextDecrypt text={greetings} />
+          {greetings}
         </Typography>
 
         {/* About Me Text */}
@@ -76,8 +92,8 @@ export const About = () => {
           {aboutme}
         </Typography>
 
-        {/* Contact Button
-        <a href="#contact">
+        {/* Contact Button */}
+        {/* <a href="#contact">
           <Button variant="contained" className={classes.contactBtn}>
             <i className="fas fa-terminal"></i>
             <Typography component="span" style={{ marginLeft: '8px' }}>Send me a message</Typography>

@@ -7,7 +7,7 @@
         "picture": "mt.png",
         "x_title": "Professional Prelude: A Brief Introduction",
         "job1": "CTO",
-        "job2": "Solutions Architect",
+        "job2": "Software Architect",
         "description": "Hello! I'm Rishikesh, a seasoned Solutions Architect. With over a decade of experience, I thrive on building high-performance teams and delivering cutting-edge technology solutions.",
         "summary": "Nex-gen technology leader with 10+ years of experience leading global teams, driving innovation in software and data architecture. Renowned for spearheading cloud implementations and delivering KPI-driven results.",
         "keywords": "technology, strategy, cloud, architecture, software, development, AI, blockchain, cybersecurity, devops, innovation, leadership, Rishikesh, Chandra, webdev, CTO, solutions architect",
@@ -50,6 +50,32 @@
                 "username": "Rishikesh Chandra",
                 "url": "https://stackoverflow.com/users/5644413/rishikesh-chandra",
                 "x_icon": "fab fa-stack-overflow"
+            }
+        ],
+        "nav": [
+            {
+                "network": "Home",
+                "username": "Home",
+                "url": "/",
+                "x_icon": "fas fa-home"
+            },
+            {
+                "network": "Projects",
+                "username": "Projects",
+                "url": "/projects",
+                "x_icon": "fas fa-laptop-code"
+            },
+            {
+                "network": "About",
+                "username": "About",
+                "url": "/#about",
+                "x_icon": "far fa-address-card"
+            },
+            {
+                "network": "Contact",
+                "username": "Contact",
+                "url": "/#contact",
+                "x_icon": "fas fa-mail-bulk"
             }
         ]
     },

@@ -4,6 +4,7 @@
   margin: auto;
   justify-content: center;
   flex-direction: column;
+  padding: 0 1em 1em; /* Added 1em bottom padding */
 }
 
 ._form_wrapper {
@@ -62,5 +63,27 @@
   ._form_wrapper {
     width: 100%;
     padding: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    padding: 0 1em 1em; /* Added 1em bottom padding */
+  }
+
+  ._form_wrapper {
+    width: 100%;
+    padding: 1em;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .submit-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .contact_msg {
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 }

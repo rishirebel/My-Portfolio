@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 import "./Works.css";
 import Fugu from "../../assets/recentprojects/fugu.png";
@@ -14,16 +13,7 @@ const HPEEDFVideo = "https://cyberrishi.s3.ap-south-1.amazonaws.com/hpeedf.mp4";
 const HPEEUASVideo = "https://cyberrishi.s3.ap-south-1.amazonaws.com/HPEEUAS.mov"; // HPE video path
 const ECVideo = "https://cyberrishi.s3.ap-south-1.amazonaws.com/ec.mp4"; // EC video path
 
-const useStyles = makeStyles((theme) => ({
-  main: {
-    maxWidth: "100vw",
-    marginTop: "auto",
-    marginBottom: "auto",
-  },
-}));
-
 export const Works = () => {
-  const classes = useStyles();
   const [projects] = useState([
     {
       id: 1,

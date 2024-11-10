@@ -75,7 +75,7 @@ export const Contact = () => {
   return (
     <section id="contact">
       <h1 className="contact_msg">
-          <TextDecrypt text={greetings} />
+          {greetings}
         </h1>
       <div className="contact">
         <div className="_form_wrapper">
