@@ -49,12 +49,12 @@ export const SideNavbar = () => {
       >
         <Typography>Contact</Typography>
       </a>
-      {/* <a href="/resume"
+      <a href="/resume"
         onClick={() => setActiveNav('#resume')}
         className={activeNav === '#resume' ? 'active' : ''}
       >
         <Typography>Resume</Typography>
-      </a> */}
+      </a>
     </nav>
   );
 };

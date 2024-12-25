@@ -8,7 +8,6 @@ import { SocialIcons } from '../components/content/SocialIcons';
 import { SpeedDials } from '../components/speedDial/SpeedDial';
 import { Hidden } from '@material-ui/core';
 import { Footer } from '../components/footer/Footer';
-import { Resume } from '../components/resume/Resume';
 import { NavDial } from '../components/speedDial/NavDial';
 export const ProjectsPage = () => {
     return <div>

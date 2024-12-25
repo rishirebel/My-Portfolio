@@ -2,8 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { SpeedDial, SpeedDialIcon, SpeedDialAction } from "@material-ui/lab";
 import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close"; // Import Close icon for open state
+import CloseIcon from "@material-ui/icons/Close";
 import Resume from "../../settings/resume.json";
+import { useHistory } from "react-router-dom"; // Use useHistory for React Router v5
 
 const useStyles = makeStyles((theme) => ({
     speedDial: {
@@ -19,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export const NavDial = () => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
+    const history = useHistory(); // Initialize history
 
     const handleClose = () => {
       setOpen(false);
@@ -33,10 +35,10 @@ export const NavDial = () => {
         key={action.network.toLowerCase()}
         icon={<i className={`${action.x_icon} ${classes.iconColor}`}></i>}
         tooltipTitle={action.network}
-        onClick={handleClose}
-        href={action.url}
-        target="_blank"
-        rel="noopener noreferrer"
+        onClick={() => {
+          handleClose();
+          history.push(action.url); // Use history.push for navigation
+        }}
         underline="none"
         color="inherit"
       />
